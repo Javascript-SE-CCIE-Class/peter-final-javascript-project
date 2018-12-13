@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron-fluid">
+
+        <form class="needs-validation" novalidate method="post" action="customer.html">
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip01">First name</label>
+                    <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" value=""
+                           required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip02">Last name</label>
+                    <input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" value=""
+                           required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltipUsername">Email</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Username"
+                               aria-describedby="validationTooltipUsernamePrepend" required>
+                        <div class="invalid-tooltip">
+                            Please choose a unique and valid Email.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <select class="form-control">
+                <option style="display: none">Default select</option>
+                <option>Administrator</option>
+                <option>Customer</option>
+            </select>
+            <button class="btn btn-primary" type="submit">login</button>
+    </div>
+
+</div>
+
+
+</form>
+</body>
+</html>
